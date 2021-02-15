@@ -1,0 +1,10 @@
+---
+- hosts: all
+  remote_user: root
+  vars_files:
+    - ./vars/config.yml
+
+  roles:
+   - install_prometheus
+   - install_node_exporter
+   - install_alertmanager
